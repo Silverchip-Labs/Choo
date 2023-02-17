@@ -26,4 +26,11 @@ public static class Funcs
 
         return result;
     }
+    
+    
+    // CoolAggregate
+    public static T CoolAggregate<T>(this IEnumerable<T> source, Func<T, T, T> func)
+    {
+        // todo
+    } 
 }
