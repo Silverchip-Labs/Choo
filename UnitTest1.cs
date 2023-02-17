@@ -17,4 +17,13 @@ public class Tests
         var ourResult = list.CoolSelect(func);
         Assert.AreEqual(oldLinqResult, ourResult);
     }
+
+    [Test]
+    public void WhereInnit()
+    {
+        var list = new List<int>();
+        var expected = new List<int>();
+        var actual = list.CoolWhere((el) => true);
+        Assert.AreEqual(expected, actual);
+    }
 }
